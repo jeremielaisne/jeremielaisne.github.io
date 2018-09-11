@@ -76,7 +76,7 @@
       <div role="button" aria-label="close sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
     </div>
     <nav class="ampstart-sidebar-nav ampstart-nav">
-      <ul class="list-reset m0 p0 ampstart-label">
+      <ul class="list-reset m0 ampstart-label">
           <li class="ampstart-nav-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 30"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/></svg>
             <a class="ampstart-nav-link" href="mailto:jlai083@live.fr">E-Mail</a>
@@ -95,20 +95,116 @@
   <!-- End Sidebar -->
 
   <main>
-    <section>
-      <h1>Programmation Web - Homepage</h1>
-    </section>
-    <section>
-      <ul class="mx4">
-        <ol><a href="#" class="ampstart-btn mt3">Chat en Symfony</a></ol>
-        <ol><a href="#" class="ampstart-btn mt2">Unity - Test jeu</a></ol>
-        <ol><a href="#" class="ampstart-btn mt2">Java - Space Invader</a></ol>
-        <ol><a href="#" class="ampstart-btn mt2">Mon CV</a></ol>
-      </ul>
-    </section>
+    <article>
+      <h1>Laboratoire Web - Homepage</h1>
+    </article>
+    <article>
+      <div class="mx4">
+        <section>
+          <div class="bloc-h">
+            <img src="img/chat1.png" alt="image 1 Chat avengers" id="img1_1" class="image_haut"/>
+          </div>
+          <div class="bloc-descr">
+            <p>
+              <h3>Espace Privé pour tchatter en PHP/Symfony</h3>
+              <ul class="desc_ul">
+                <li>Design css et la police inspirés de la série des avengers.</li>
+                <li>Reception du mot de passe par mail</li>
+                <li>Authentification puis connexion</li>
+                <li>Création d'un chatroom/Rejoindre un chatroom existant</li>
+                <li>Interaction possible grâce à la méthode <em>long-polling</em> en <strong>AJAX</strong></li>
+                <li>Développement <em>été 2018</em></li>
+              </ul>
+            </p>
+            <div class="img-descr">
+              <img src="img/chat2.png" alt="image 2 Chat avengers" id="img2_1_bas" class="image_bas"/>
+              <img src="img/chat3.png" alt="image 3 Chat avengers" id="img3_1_bas" class="image_bas"/>
+              <img src="img/chat4.png" alt="image 4 Chat avengers" id="img4_1_bas" class="image_bas"/>
+            </div>
+          <a href="http://dollars.jeremielaisne.yo.fr" class="ampstart-btn mt3">T'Chat en Symfony</a>
+          </div>
+        </section>
+        <section>
+          <div class="bloc-h">
+            <img src="img/forum1.png" alt="image 1 Forum avengers" id="img2_1" class="image_haut"/>
+          </div>
+          <div class="bloc-descr">
+            <p>
+              <h3>Forum en PHP/Silex</h3>
+              <ul class="desc_ul">
+                  <li>Inscription d'un nouveau compte avec choix de l'avatar (img 50x50)</li>
+                  <li>Gestion des comptes par l'admin</li>
+                  <li>Choix ou création d'un topic</li>
+                  <li>Poster un message</li>
+                  <li>Début d'<strong>API Rest</strong> (lecture en JSON)</li>
+                  <li>Développé en collaboration(3 personnes) <em>fin 2017</em> en Licence Pro</li>
+              </ul>
+            </p>
+            <div class="img-descr">
+              <img src="img/forum2.png" alt="image 2 Forum" id="img2_2_bas" class="image_bas"/>
+              <img src="img/forum3.png" alt="image 3 Forum" id="img3_2_bas" class="image_bas"/>
+              <img src="img/forum4.png" alt="image 4 Forum" id="img4_2_bas" class="image_bas"/>
+            </div>
+          <a href="http://forum.jeremielaisne.yo.fr" class="ampstart-btn mt3">Forum en Silex</a>
+          </div>
+        </section>
+        <section>
+          <div class="bloc-h">
+            <img src="img/unity1.png" alt="image 1 Unity" id="img3_1" class="image_haut"/>
+          </div>
+          <div class="bloc-descr">
+            <p>
+              <h3>Devoir sur Unity</h3>
+              <ul class="desc_ul">
+                  <li>Petit shooter par navigateur</li>
+                  <li>3 scènes (menu, jeu et gameover)</li>
+                  <li>Enregistrement du meilleur score</li>
+                  <li>Destruction des vaisseaux ennemis - Perte de points si asteroid touché - 5 vies</li>
+                  <li>Design Pattern Singleton et autres classes développé en <strong>C#</strong></li>
+                  <li>Développé <em>début 2018</em> en Licence Pro</li>
+              </ul>
+            </p>
+            <div class="img-descr">
+              <img src="img/unity2.png" alt="image 2 Unity" id="img2_3_bas" class="image_bas"/>
+              <img src="img/unity3.png" alt="image 3 Unity" id="img3_3_bas" class="image_bas"/>
+              <img src="img/unity4.png" alt="image 4 Unity" id="img4_3_bas" class="image_bas"/>
+            </div>
+          <a href="http://jeremielaisne.github.io/AndroGame/index.html" class="ampstart-btn mt2">Un mini-jeu Unity</a>
+          </div>
+        </section>
+        <section>
+          <div class="bloc-h">
+            <img src="img/java1.png" alt="image 1 Java" id="img4_1" class="image_haut"/>
+          </div>
+          <div class="bloc-descr">
+            <p>
+              <h3>Space-Invader en JAVA</h3>
+              <ul class="desc_ul">
+                  <li>Design GameBoy</li>
+                  <li>Continuation d'un travail commencé par les professeurs</li>
+                  <li>Perte de vies par des projectiles ennemis</li>
+                  <li>Introduction d'un systeme de scoring</li>
+                  <li>Présence d'un écran de game over</li>
+                  <li>Développé <em>fin 2016</em> en DUT Informatique</li>
+              </ul>
+            </p>
+            <div class="img-descr">
+              <img src="img/java2.png" alt="image 2 Java" id="img2_4_bas" class="image_bas"/>
+              <img src="img/java3.png" alt="image 3 Java" id="img3_4_bas" class="image_bas"/>
+              <img src="img/java4.png" alt="image 4 Java" id="img4_4_bas" class="image_bas"/>
+            </div>
+          <a href="https://github.com/jeremielaisne/spaceInvaderJava" class="ampstart-btn mt2">Un Space Invader en JAVA</a>
+          </div>
+        </section>
+      </div>
+    </article>
   </main>
   <ampstart-footer>
-      <p class="ampstart-small-text center mt4">	&#169; Copyright 2018 - Laisné Jérémie</p>
+      <h3 id="h3p4">P4</h3>
+      <section id="testJS">
+
+      </section>
+      <p class="ampstart-small-text center mt4" id="footer">	&#169; Copyright 2018 - Laisné Jérémie</p>
   </ampstart-footer>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -117,6 +213,223 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+  <script type="text/javascript">
+  /* Script pour un puissance 4 */
+		/* Attributs */
+		let la = 6;
+		let lg = 6;
+
+		/* Prototypes */
+		var Grille = function(lg, la){
+			grille = [];
+			this.lg = lg;
+			this.la = la;
+
+			this.initialisation = function (){
+				var table = document.createElement('table');
+				table.setAttribute('id','grille');
+				document.getElementById('testJS').appendChild(table);
+
+				for (let i=0;i<lg*la;i++){
+					grille.push(i);
+					if(i%la==0){
+						var tr = document.createElement('tr');
+						tr.setAttribute('id','tr'+i/la);
+						document.getElementById('grille').appendChild(tr);
+					}
+					var td = document.createElement('td');
+					var text = document.createTextNode(i);
+					td.setAttribute('id','td'+i);
+					td.setAttribute('class','td'+Math.trunc(i/la));
+					//td.appendChild(text);
+					document.getElementById('tr'+Math.trunc(i/la)).appendChild(td);
+					};
+				};
+
+			this.inserer = function (nb, tour){
+				pr = new Pion(tour);
+				let pose = ((la-1)*lg)+nb;
+
+				while(grille[pose] == 'O' || grille[pose] == 'X'){
+					pose -=la;
+				}
+
+				if (pose >0){
+					grille.splice(pose,1,'O');
+					pr.mettre(pose);
+				}
+
+				tour++;
+			};
+
+			this.tourjoueur2 = function (nb, tour){
+				pr = new Pion(tour);
+				let pose = ((la-1)*lg)+nb;
+
+				while(grille[pose] == 'O' || grille[pose] == 'X'){
+					pose -=la;
+				}
+
+				if (pose >0){
+					grille.splice(pose,1,'X');
+					pr.ia(pose);
+				}
+
+				tour++;
+			};
+
+			this.analyse = function (){
+				let cptVertical = 0;
+				let cptDiagonale = 0;
+				let cptHorizontal = 0;
+				let cptDiagonaleI = 0;
+
+				let cptVerticalIA = 0;
+				let cptDiagonaleIA = 0;
+				let cptHorizontalIA = 0;
+				let cptDiagonaleIIA = 0;
+
+				for (let i=0; i<la*lg && cptVertical<4 && cptVerticalIA<4;i++){
+					// P4 Vertical
+					if (grille[i]=='O' && grille[i-1]=='O' && grille[i-2]=='O' && grille[i-3]=='O' && i-1%la!=0 && i-1%la!=la && i-2%la!=0 && i-2%la!=la && i%la!=0)
+						cptVertical = 4;
+					// P4 Horizontale
+					if(grille[i]=='O' && grille[i-la]=='O' && grille[i-la*2]=='O' && grille[i-la*3]=='O')
+						cptHorizontal = 4;
+					// P4 Diagonale
+					if(grille[i]=='O' && grille[(i-la)+1]=='O' && grille[(i-la*2)+2]=='O' && grille[(i-la*3)+3]=='O' && (i+la)+1%la!=0 && (i+la)+1%la!=la && (i+la*2)+2%la!=0 && (i+la*2)+2%la!=la && (i+la*3)+3%la!=0 && (i+la*3)+3%la!=la)
+						cptDiagonale = 4;
+					// P4 DiagonaleI
+					if(grille[i]=='O' && grille[(i-la)-1]=='O' && grille[(i-la*2)-2]=='O' && grille[(i-la*3)-3]=='O' && (i+la)-1%la!=0 && (i+la)-1%la!=la && (i+la*2)-2%la!=0 && (i+la*2)-2%la!=la && (i+la*3)-3%la!=0 && (i+la*3)-3%la!=la)
+						cptDiagonaleI = 4;
+
+					// P4 Vertical
+					if (grille[i]=='X' && grille[i-1]=='X' && grille[i-2]=='X' && grille[i-3]=='X' && i-1%la!=0 && i-1%la!=la && i-2%la!=0 && i-2%la!=la && i%la!=0)
+						cptVerticalIA = 4;
+					// P4 Horizontale
+					if(grille[i]=='X' && grille[i-la]=='X' && grille[i-la*2]=='X' && grille[i-la*3]=='X')
+						cptHorizontalIA = 4;
+					// P4 Diagonale
+					if(grille[i]=='X' && grille[(i-la)+1]=='X' && grille[(i-la*2)+2]=='X' && grille[(i-la*3)+3]=='X' && (i+la)+1%la!=0  && (i+la)+1%la!=la && (i+la*2)+2%la!=0 && (i+la*2)+2%la!=la)
+						cptDiagonaleIA = 4;
+					// P4 DiagonaleI
+					if(grille[i]=='X' && grille[(i-la)-1]=='X' && grille[(i-la*2)-2]=='X' && grille[(i-la*3)-3]=='X' && (i+la)-1%la!=0 && (i+la)-1%la!=la && (i+la*2)-2%la!=0 && (i+la*2)-2%la!=la)
+						cptDiagonaleIIA = 4;
+
+				}
+				if (cptVertical===4 || cptDiagonale===4 || cptHorizontal===4 || cptDiagonaleI===4){
+					newpartie.fin(true);
+				}
+				else if (cptVerticalIA===4 || cptDiagonaleIA===4 || cptHorizontalIA===4 || cptDiagonaleIIA===4){
+					newpartie.fin(false);
+				}
+			}
+
+			this.touradverse = function (nb, tour){
+				pr = new Pion(tour);
+				let coup = 0;
+				let choix = 0;
+				let joueur = 1;
+
+				let score = 0;
+				let grilletest = [la*lg];
+
+				/* Simulation de tous les cas possibles en ajoutant un jeton */
+				function simuler (coup, joueur){
+					/* Fonction à integrer pour un mode IA */
+				}
+
+				var evalIA =  function(grilletest){
+					/* Fonction à integrer pour un mode IA */
+				}
+
+				/* l'IA joue l'un des meilleur coup possibles */
+				var choixIA = function(joueur){
+					let resultat = [];
+					let temp = -10000;
+					let temp2 = 10000;
+					let cIA = 0;
+
+					let randmath = Math.random()*10;
+					for(let i=0;i<la;i++)
+					{
+						randmath = Math.random()*10;
+						resultat.push(simuler(i, joueur));
+					}
+
+					if(joueur==0){
+						resultat.forEach(function(e){if(temp<e[0]||(temp==e[0] && randmath>5.1)){temp=e[0];cIA=e[1]}});
+						//Pose pion
+						grille.splice(cIA,1,'X');
+						pr.ia(cIA);
+					}else if(joueur==1){
+						resultat.forEach(function(e){if(temp2>e[0]||(temp2==e[0] && randmath>5.1)){temp2=e[0];cIA=e[1]}});
+						//Pose pion
+						grille.splice(cIA,1,'O');
+						pr.mettre(cIA);
+					}
+
+					return cIA;
+				}
+
+				choix = choixIA(0);
+
+				//Fonction facultative d'annulation de coup
+				var annuleCoup = function(choix){
+					grille.splice(choix,1,choix);
+					var elementasup = document.getElementById('td'+choix);
+					elementasup.removeChild(elementasup.firstChild);
+				}
+
+			}
+
+			this.efface = function (){
+				//document.getElementById('grille').innerHTML= "";
+				grille = [];
+			}
+		};
+
+		var Pion = function (i){
+			let p = document.createElement('div');
+
+			this.mettre = function (pose){
+				document.getElementById('td'+pose).appendChild(p);
+				p.setAttribute('id','p'+i);
+				p.setAttribute('class','p'+Math.trunc(i/la));
+			};
+			this.ia = function (pose){
+				document.getElementById('td'+pose).appendChild(p);
+				p.setAttribute('id','ia'+i);
+				p.setAttribute('class','ia'+Math.trunc(i/la));
+			};
+		};
+
+		var Partie = function (gr){
+			let tour = 1;
+			gr.initialisation();
+
+			this.evt = function (){
+				for(let i=0;i<la;i++)
+					document.getElementsByClassName('td0')[i].addEventListener('click', function (){if(tour==0){gr.efface();}else{if(tour%2==0){gr.inserer(i, tour);}else{gr.tourjoueur2(i, tour);}gr.analyse(); tour++;}});
+			}
+
+			this.fin = function (victoire){
+				if (victoire)
+					alert('Game Over : J1 a gagner !');
+				else
+					alert('Game Over : J2 a gagner !');
+				tour = -1;
+			}
+		};
+
+		/* Initialisation */
+		gr = new Grille(lg,la);
+
+		newpartie = new Partie(gr);
+		newpartie.evt();
+
+	</script>
 </body>
 
 </html>

@@ -10,16 +10,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-body {
-    background-color: #8470FF;
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -101,21 +91,126 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   html {
+       color: #222;
+       font-size: 1em;
+       line-height: 1.4;
+   }
 
+   body {
+       background-color: #52839B;
+       font-family: sans-serif;
+   }
 
+   section {
+       border-bottom: 2px dotted black;
+       padding: 2em;
+       display: flex;
+   }
 
+   p{
+       display: inline-block;
+       justify-content: space-around;
+   }
 
+   h3{
+       font-size: 1em;
+   }
 
+@media screen and (min-width: 780px){
+   img{
+       padding: 0.3em;
+       margin: 0;
+   }
 
+   #h3p4{
+       text-align: center;
+   }
 
+   .image_haut{
+       margin-top: 2em;
+       width: 22em;
+       min-height: 24em;
+   }
 
+   .image_bas{
+       width: 14em;
+       max-height: 16em;
+   }
 
+   .bloc-descr{
+       display: flex;
+       flex-direction: column;
+   }
 
+   .img-descr{
+       display: flex;
+   }
 
+   #img2_1_bas, #img2_2_bas, #img2_3_bas, #img2_4_bas{
+       width: 30em;
+   }
 
+   .btn-block{
+     display: block;
+     width: 50em;
+   }
 
+   .td0, .td1, .td2, .td3, .td4, .td5
+    {
+    	border: 2px solid black;
+    	border-radius: 25px;
+    	width: 2em;
+    	height: 2em;
+    	padding: 0;
+    	margin: 0;
+    }
 
+    .p0, .p1, .p2, .p3, .p4, .p5, .p6
+    {
+    	border-radius: 25px;
+    	padding: 0.85em;
+    	background-color: red;
+    }
 
+    .ia0, .ia1, .ia2, .ia3, .ia4, .ia5, .ia6
+    {
+    	border-radius: 25px;
+    	padding: 0.8em;
+    	background-color: yellow;
+    }
+
+    #grille
+    {
+      margin: auto;
+    }
+
+    #footer
+    {
+      padding: 2%;
+    }
+
+}
+
+@media screen and (max-width: 779px){
+    img{
+        padding: 0;
+        margin: 0;
+    }
+
+    #img2_1_bas, #img2_2_bas, #img2_3_bas, #img2_4_bas,.image_haut, .desc_ul, #h3p4, #testJS{
+        display: none;
+    }
+
+    .image_bas{
+        width: 8em;
+        max-height: 8em;
+    }
+
+    .bloc-descr, .ampstart-btn{
+        width: 100%;
+    }
+}
 
 /* ==========================================================================
    Helper classes

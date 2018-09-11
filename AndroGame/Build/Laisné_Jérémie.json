@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "projet",
+"dataUrl": "Laisné_Jérémie.data.unityweb",
+"asmCodeUrl": "Laisné_Jérémie.asm.code.unityweb",
+"asmMemoryUrl": "Laisné_Jérémie.asm.memory.unityweb",
+"asmFrameworkUrl": "Laisné_Jérémie.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
