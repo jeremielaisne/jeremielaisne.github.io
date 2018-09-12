@@ -203,7 +203,7 @@ textarea {
     }
 
     .image_bas{
-        width: 65%;
+        width: 100%;
 		max-height: 300px;
     }
 
@@ -217,7 +217,7 @@ textarea {
 	}
 	
 	.ampstart-btn{
-        width: 65%;
+        width: 100%;
     }
 }
 
