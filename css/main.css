@@ -116,6 +116,12 @@ textarea {
    h3{
        font-size: 1em;
    }
+   
+   #footer
+   {
+       padding: 2%;
+   }
+
 
 @media screen and (min-width: 780px){
    img{
@@ -184,12 +190,6 @@ textarea {
     {
       margin: auto;
     }
-
-    #footer
-    {
-      padding: 2%;
-    }
-
 }
 
 @media screen and (max-width: 779px){
@@ -198,17 +198,26 @@ textarea {
         margin: 0;
     }
 
-    #img2_1_bas, #img2_2_bas, #img2_3_bas, #img2_4_bas,.image_haut, .desc_ul, #h3p4, #testJS{
+    #img2_1_bas, #img2_2_bas, #img2_3_bas, #img2_4_bas,.image_haut, .desc_ul, #h3p4, #testJS, #img3_1_bas, #img3_2_bas, #img4_3_bas, #img4_4_bas{
         display: none;
     }
 
     .image_bas{
-        width: 8em;
-        max-height: 8em;
+        width: 65%;
+		max-height: 300px;
     }
 
-    .bloc-descr, .ampstart-btn{
-        width: 100%;
+    .bloc-descr{
+        width: 70%;
+		margin: auto;
+    }
+	
+	.bloc-descr *{
+		margin: 0;
+	}
+	
+	.ampstart-btn{
+        width: 65%;
     }
 }
 
