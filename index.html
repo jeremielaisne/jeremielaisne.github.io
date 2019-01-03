@@ -1,439 +1,131 @@
-<!doctype html>
-<html ⚡ class="no-js" lang="fr">
-
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Developpement Web - Website</title>
-
-  <!-- AMP -->
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <link rel="canonical" href="https://ampbyexample.com/introduction/hello_world/">
-
-  <meta name="description" content="Ma page web présentant quelques projets que j'ai réalisé pendant mes études ou mon temps libre. On y trouve un Chat & forum en symfony. Un petit jeu réalisé sur Unity et divers petits trucs.">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-
-  <!-- AMP meta -->
-  <meta name="apple-itunes-app" content="app-id=828256236, app-argument=medium://p/9ea61abf530f">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Github - Tetris</title>
+    <meta name="description" content="Ma page github retraçant un échantillon de mes projets réalisé en cours ou pour le fun.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="tetris.min.css" />
+    <!-- JS -->
+    <script src="tetris.min.js"></script>
 </head>
-
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-  <style amp-boilerplate>
-    body{
-      -webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-      -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}
-      @-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible
-    }}
-      @-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-      @-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-      @-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-      @keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-    </style><noscript><style amp-boilerplate>
-      body{
-        -webkit-animation:none;
-        -moz-animation:none;
-        -ms-animation:none;animation:none
-    }
-    </style></noscript>
-    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-    <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
-
-  <!-- Add your site or application content here -->
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Start Navbar -->
-  <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4 pt2 md-pt0">
-    <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2 absolute top-0 pr0 mr2 mt2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" class="block">
-        <path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-      </svg>
-    </div>
-    <div class="text-decoration-none inline-block mx-auto ampstart-headerbar-home-link mb1 md-mb0">
-      <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-        <path d="M24 8.2c0-.318-.126-.623-.351-.849-.226-.225-.531-.351-.849-.351h-6.6c-.318 0-.623.126-.849.351-.225.226-.351.531-.351.849v13.6c0 .318.126.623.351.849.226.225.531.351.849.351h6.6c.318 0 .623-.126.849-.351.225-.226.351-.531.351-.849v-13.6zm-11 14.8h-8l2.599-3h5.401v3zm6.5-1c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm3.5-3v-9.024h-7v9.024h7zm-2-14h-2v-2h-17v13h11v2h-13v-17h21v4zm-.5 4c.276 0 .5-.224.5-.5s-.224-.5-.5-.5h-2c-.276 0-.5.224-.5.5s.224.5.5.5h2z"/>
-      </svg>
-    </div>
-
-  </header>
-  <!-- Start Sidebar -->
-  <amp-sidebar id="header-sidebar" class="ampstart-sidebar px3  md-flex flex-column justify-content items-center justify-center" layout="nodisplay">
-    <div class="flex justify-start items-center ampstart-sidebar-header">
-      <div role="button" aria-label="close sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
-    </div>
-    <nav class="ampstart-sidebar-nav ampstart-nav">
-      <ul class="list-reset m0 ampstart-label">
-		  <li class="ampstart-nav-item">
-			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH5SURBVGhD7dq/SxxBGMbxI5EkRETURAiChU1aQbHRwsIuhaD4Hwhp7fIHCFqosRK0UyGQVEICIkiqNCmshIAhsUgdUYiIgj+/b7Gwvrx3N7O3dzvm5oFPtzO7z93N3u3elmLu5y2OcevhBnvoQxBpwyWsg3WxgbrmOVZwAusAtH34ZATWPJq8cweYRKaswZq4nHoVSVxhCF55hH+wJiyn3kXEe3ilHdZElTSiyAd4pVyRa8jZSZPP8Rn60eGgE7OQOc+h5zuF3rfIrcgfWFmHtX018rkfhs4bWNvXvchTLOIQ+tW1HOE75ICtFFYk78QiOrGIkVbIGvJJUEV6sAM5ZX/FKFwTVJEtpMde4CVcElSRX9Dj5QvTJUEV2YYe/wouCarIR6TH/kUXXBJUkV7I769k7AJcE1QRyRKSsa7rQxJUkcf4jGTsBFwTRJEWTOMH0mPluv4TXN6ZIIp8gTU2IT/dx1EphRd5AbnFU021S9bgFnvWxCI6TVnkCQZq8Bo6hRSRb3BrW1ffoFNIkW7s1mAZOnGN6DRlkWcY8zSISnkwi91a4Ok8mMVuLfB04hrRiUVySiyi898XkVs6Uw0wD2v/uRUpWvMWkb8CrImKtgnv/IY1WZHewTtyQ62WZ0zy9hPy3EumyKXoHORxjqKsYgaZS8Q0PqXSHTCojSR4bLSTAAAAAElFTkSuQmCC"/>
-            <a class="ampstart-nav-link" href="jeremielaisne.yo.fr">CV</a>
-          </li>
-          <li class="ampstart-nav-item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 30"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/></svg>
-            <a class="ampstart-nav-link" href="mailto:jlai083@live.fr">E-Mail</a>
-          </li>
-          <li class="ampstart-nav-item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 30"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-            <a class="ampstart-nav-link" href="https://fr.linkedin.com/in/j%C3%A9r%C3%A9mie-laisn%C3%A9-799757145">LinkedIn</a>
-          </li>
-          <li class="ampstart-nav-item">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 30"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            <a class="ampstart-nav-link" href="https://github.com/jeremielaisne">GitHub</a>
-          </li>
-      </ul>
-    </nav>
-  </amp-sidebar>
-  <!-- End Sidebar -->
-
-  <main>
-    <article>
-      <h1>Laboratoire Web - Homepage</h1>
-    </article>
-    <article>
-      <div class="mx4">
-        <section>
-          <div class="bloc-h">
-            <img src="img/chat1.png" alt="image 1 Chat avengers" id="img1_1" class="image_haut"/>
-          </div>
-          <div class="bloc-descr">
-            <p>
-              <h3>Espace Privé pour tchatter en PHP/Symfony</h3>
-              <ul class="desc_ul">
-                <li>Design css et la police inspirés de la série des avengers.</li>
-                <li>Reception du mot de passe par mail</li>
-                <li>Authentification puis connexion</li>
-                <li>Création d'un chatroom/Rejoindre un chatroom existant</li>
-                <li>Interaction possible grâce à la méthode <em>long-polling</em> en <strong>AJAX</strong></li>
-                <li>Développement <em>été 2018</em></li>
-              </ul>
-            </p>
-            <div class="img-descr">
-              <img src="img/chat2.png" alt="image 2 Chat avengers" id="img2_1_bas" class="image_bas"/>
-              <img src="img/chat3.png" alt="image 3 Chat avengers" id="img3_1_bas" class="image_bas"/>
-              <img src="img/chat4.png" alt="image 4 Chat avengers" id="img4_1_bas" class="image_bas"/>
+    <head>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand text-white"><i class="fab fa-github"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="nav_1001salles" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Tetris <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Morpion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://jeremielaisne.github.io/AndroGame/index.html">AndroGame (Unity)</a>
+                    </li>
+                </ul>       
             </div>
-          <a href="http://dollars.jeremielaisne.yo.fr" class="ampstart-btn mt3">T'Chat en Symfony</a>
-          </div>
-        </section>
-        <section>
-          <div class="bloc-h">
-            <img src="img/forum1.png" alt="image 1 Forum avengers" id="img2_1" class="image_haut"/>
-          </div>
-          <div class="bloc-descr">
-            <p>
-              <h3>Forum en PHP/Silex</h3>
-              <ul class="desc_ul">
-                  <li>Inscription d'un nouveau compte avec choix de l'avatar (img 50x50)</li>
-                  <li>Gestion des comptes par l'admin</li>
-                  <li>Choix ou création d'un topic</li>
-                  <li>Poster un message</li>
-                  <li>Début d'<strong>API Rest</strong> (lecture en JSON)</li>
-                  <li>Développé en collaboration(3 personnes) <em>fin 2017</em> en Licence Pro</li>
-              </ul>
+        </nav>
+    </head>
+    <main>
+        <section class="jumbotron">
+            <h1 class="display-4" id="titre">Tetris en JS</h1>
+            <hr class="my-4">
+            <p class="lead"><strong>Tetris</strong> est un jeu vidéo de puzzle conçu par Alekseï Pajitnov à partir de juin 1984 sur Elektronika 60.
+            <br/>Le joueur doit réalisé des lignes complètes en déplaçant des pièces de formes différentes, les <em>tétrominos</em>, qui défilent depuis le haut jusqu'au bas de l'écran. Les lignes complétées disparaissent tout en rapportant des points et le joueur peut de nouveau remplir les cases libérées.
             </p>
-            <div class="img-descr">
-              <img src="img/forum2.png" alt="image 2 Forum" id="img2_2_bas" class="image_bas"/>
-              <img src="img/forum3.png" alt="image 3 Forum" id="img3_2_bas" class="image_bas"/>
-              <img src="img/forum4.png" alt="image 4 Forum" id="img4_2_bas" class="image_bas"/>
-            </div>
-          <a href="http://forum.jeremielaisne.yo.fr" class="ampstart-btn mt3">Forum en Silex</a>
-          </div>
         </section>
-        <section>
-          <div class="bloc-h">
-            <img src="img/unity1.png" alt="image 1 Unity" id="img3_1" class="image_haut"/>
-          </div>
-          <div class="bloc-descr">
-            <p>
-              <h3>Devoir sur Unity</h3>
-              <ul class="desc_ul">
-                  <li>Petit shooter par navigateur</li>
-                  <li>3 scènes (menu, jeu et gameover)</li>
-                  <li>Enregistrement du meilleur score</li>
-                  <li>Destruction des vaisseaux ennemis - Perte de points si asteroid touché - 5 vies</li>
-                  <li>Design Pattern Singleton et autres classes développé en <strong>C#</strong></li>
-                  <li>Développé <em>début 2018</em> en Licence Pro</li>
-              </ul>
-            </p>
-            <div class="img-descr">
-              <img src="img/unity2.png" alt="image 2 Unity" id="img2_3_bas" class="image_bas"/>
-              <img src="img/unity3.png" alt="image 3 Unity" id="img3_3_bas" class="image_bas"/>
-              <img src="img/unity4.png" alt="image 4 Unity" id="img4_3_bas" class="image_bas"/>
+        <div class="row-striped">
+            <div class="d-md-flex flex-row bd-highlight mb-3">
+                <section class="bd-highlight col-md-6 col-sm-12" id="grille_tetris">
+                    <div id="img-tetris">
+                        <table id="tetris">
+                            <!-- Javascript -->
+                        </table>
+                    </div>
+                    <div class="container" id="commandes">
+                        <a class="btn btn-primary"><i class="fas fa-arrow-circle-left" id="b_gauche"></i></a>
+                        <a class="btn btn-danger"><i class="fas fa-arrow-circle-down" id="b_bas"></i></a>
+                        <a class="btn btn-success"><i class="fas fa-sync-alt" id="b_action"></i></a>
+                        <a class="btn btn-primary"><i class="fas fa-arrow-circle-right" id="b_droit"></i></a>
+                    </div>
+                </section>
+                <section class="p-md-4 bd-highlight col-md-3 col-sm-6 col-xs-12" id="comp_tetris">
+                    <a class="btn btn-block btn-primary text-light font-weight-bold" id="b_start">START  <i class="fas fa-mouse-pointer"></i></a><br/>
+                    <div class="card">
+                        <div class="card-body" id="grille_min">
+                            <table class="col-5" id="tetris_min">
+                                <!-- Javascript -->
+                            </table>    
+                        </div>
+                    </div>
+                    <div class="card" id="blk-score">
+                        <div class="card-body">
+                            <h5 class="card-title">Score</h5>
+                            <p class="card-text" id="aff_score">0</p>
+                        </div>
+                    </div>
+                    <div class="card" id="blk-lvl">
+                        <div class="card-body">
+                            <h5 class="card-title">Niveau</h5>
+                            <p class="card-text" id="aff_niveau">1</p>
+                        </div>
+                    </div>
+                    <div class="card" id="blk-lgn">
+                        <div class="card-body">
+                            <h5 class="card-title">Lignes</h5>
+                            <p class="card-text" id="aff_ligne">0</p>
+                        </div>
+                    </div>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <p class="font-weight-bold" id="aff_resultat">Commandes : A:left - S:action - L:down - P:right</p>
+                    </div>
+                    <div class="container">
+                        <audio class="col-11" tabindex="0" id="audio_mus" controls="controls">
+                            <source src="tetris.mp3" type="audio/mp3"/>
+                            Votre navigateur ne supporte pas la balise AUDIO
+                        </audio>
+                    </div>
+                </section>
+                <aside class="p-3 bd-highlight col-md-3 col-sm-6">
+                    <div class="card" id="bloc_auteur">
+                        <div class="card-body">
+                            <h5 class="card-title">Auteur</h5>
+                            <div class="card">
+                                <img src="assets/avatar.png" alt="Images portrait Jérémie Laisné" id="avt" class="col-8"></img>
+                            </div>
+                            <p class="card-text">Laisné Jérémie</p>
+                            <p class="card-text">Développeur Web PHP</p>
+                            <ul>
+                                <li>Xp Sites Internet</li>
+                                <li>Xp Intranet / Extranet</li>
+                                <li>BAC +3 Web & Mobile</li>
+                            </ul>
+                            <a class="lien" href="https://fr.linkedin.com/in/j%C3%A9r%C3%A9mie-laisn%C3%A9-799757145"><i class="fab fa-linkedin"></i></a>
+                            <a class="lien" href="https://github.com/jeremielaisne"><i class="fab fa-github-square"></i></a>
+                            <a class="lien" href="mailto:jlai083@live.fr"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </aside>
             </div>
-          <a href="http://jeremielaisne.github.io/AndroGame/index.html" class="ampstart-btn mt2">Un mini-jeu Unity</a>
-          </div>
-        </section>
-        <section>
-          <div class="bloc-h">
-            <img src="img/java1.png" alt="image 1 Java" id="img4_1" class="image_haut"/>
-          </div>
-          <div class="bloc-descr">
-            <p>
-              <h3>Space-Invader en JAVA</h3>
-              <ul class="desc_ul">
-                  <li>Design GameBoy</li>
-                  <li>Continuation d'un travail commencé par les professeurs</li>
-                  <li>Perte de vies par des projectiles ennemis</li>
-                  <li>Introduction d'un systeme de scoring</li>
-                  <li>Présence d'un écran de game over</li>
-                  <li>Développé <em>fin 2016</em> en DUT Informatique</li>
-              </ul>
-            </p>
-            <div class="img-descr">
-              <img src="img/java2.png" alt="image 2 Java" id="img2_4_bas" class="image_bas"/>
-              <img src="img/java3.png" alt="image 3 Java" id="img3_4_bas" class="image_bas"/>
-              <img src="img/java4.png" alt="image 4 Java" id="img4_4_bas" class="image_bas"/>
-            </div>
-          <a href="https://github.com/jeremielaisne/spaceInvaderJava" class="ampstart-btn mt2">Un Space Invader en JAVA</a>
-          </div>
-        </section>
-      </div>
-    </article>
-  </main>
-  <ampstart-footer>
-      <h3 id="h3p4">P4</h3>
-      <section id="testJS">
-
-      </section>
-      <p class="ampstart-small-text center mt4" id="footer">	&#169; Copyright 2018 - Laisné Jérémie</p>
-  </ampstart-footer>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-
-  <script type="text/javascript">
-  /* Script pour un puissance 4 */
-		/* Attributs */
-		let la = 6;
-		let lg = 6;
-
-		/* Prototypes */
-		var Grille = function(lg, la){
-			grille = [];
-			this.lg = lg;
-			this.la = la;
-
-			this.initialisation = function (){
-				var table = document.createElement('table');
-				table.setAttribute('id','grille');
-				document.getElementById('testJS').appendChild(table);
-
-				for (let i=0;i<lg*la;i++){
-					grille.push(i);
-					if(i%la==0){
-						var tr = document.createElement('tr');
-						tr.setAttribute('id','tr'+i/la);
-						document.getElementById('grille').appendChild(tr);
-					}
-					var td = document.createElement('td');
-					var text = document.createTextNode(i);
-					td.setAttribute('id','td'+i);
-					td.setAttribute('class','td'+Math.trunc(i/la));
-					//td.appendChild(text);
-					document.getElementById('tr'+Math.trunc(i/la)).appendChild(td);
-					};
-				};
-
-			this.inserer = function (nb, tour){
-				pr = new Pion(tour);
-				let pose = ((la-1)*lg)+nb;
-
-				while(grille[pose] == 'O' || grille[pose] == 'X'){
-					pose -=la;
-				}
-
-				if (pose >0){
-					grille.splice(pose,1,'O');
-					pr.mettre(pose);
-				}
-
-				tour++;
-			};
-
-			this.tourjoueur2 = function (nb, tour){
-				pr = new Pion(tour);
-				let pose = ((la-1)*lg)+nb;
-
-				while(grille[pose] == 'O' || grille[pose] == 'X'){
-					pose -=la;
-				}
-
-				if (pose >0){
-					grille.splice(pose,1,'X');
-					pr.ia(pose);
-				}
-
-				tour++;
-			};
-
-			this.analyse = function (){
-				let cptVertical = 0;
-				let cptDiagonale = 0;
-				let cptHorizontal = 0;
-				let cptDiagonaleI = 0;
-
-				let cptVerticalIA = 0;
-				let cptDiagonaleIA = 0;
-				let cptHorizontalIA = 0;
-				let cptDiagonaleIIA = 0;
-
-				for (let i=0; i<la*lg && cptVertical<4 && cptVerticalIA<4;i++){
-					// P4 Vertical
-					if (grille[i]=='O' && grille[i-1]=='O' && grille[i-2]=='O' && grille[i-3]=='O' && i-1%la!=0 && i-1%la!=la && i-2%la!=0 && i-2%la!=la && i%la!=0)
-						cptVertical = 4;
-					// P4 Horizontale
-					if(grille[i]=='O' && grille[i-la]=='O' && grille[i-la*2]=='O' && grille[i-la*3]=='O')
-						cptHorizontal = 4;
-					// P4 Diagonale
-					if(grille[i]=='O' && grille[(i-la)+1]=='O' && grille[(i-la*2)+2]=='O' && grille[(i-la*3)+3]=='O' && (i+la)+1%la!=0 && (i+la)+1%la!=la && (i+la*2)+2%la!=0 && (i+la*2)+2%la!=la && (i+la*3)+3%la!=0 && (i+la*3)+3%la!=la)
-						cptDiagonale = 4;
-					// P4 DiagonaleI
-					if(grille[i]=='O' && grille[(i-la)-1]=='O' && grille[(i-la*2)-2]=='O' && grille[(i-la*3)-3]=='O' && (i+la)-1%la!=0 && (i+la)-1%la!=la && (i+la*2)-2%la!=0 && (i+la*2)-2%la!=la && (i+la*3)-3%la!=0 && (i+la*3)-3%la!=la)
-						cptDiagonaleI = 4;
-
-					// P4 Vertical
-					if (grille[i]=='X' && grille[i-1]=='X' && grille[i-2]=='X' && grille[i-3]=='X' && i-1%la!=0 && i-1%la!=la && i-2%la!=0 && i-2%la!=la && i%la!=0)
-						cptVerticalIA = 4;
-					// P4 Horizontale
-					if(grille[i]=='X' && grille[i-la]=='X' && grille[i-la*2]=='X' && grille[i-la*3]=='X')
-						cptHorizontalIA = 4;
-					// P4 Diagonale
-					if(grille[i]=='X' && grille[(i-la)+1]=='X' && grille[(i-la*2)+2]=='X' && grille[(i-la*3)+3]=='X' && (i+la)+1%la!=0  && (i+la)+1%la!=la && (i+la*2)+2%la!=0 && (i+la*2)+2%la!=la)
-						cptDiagonaleIA = 4;
-					// P4 DiagonaleI
-					if(grille[i]=='X' && grille[(i-la)-1]=='X' && grille[(i-la*2)-2]=='X' && grille[(i-la*3)-3]=='X' && (i+la)-1%la!=0 && (i+la)-1%la!=la && (i+la*2)-2%la!=0 && (i+la*2)-2%la!=la)
-						cptDiagonaleIIA = 4;
-
-				}
-				if (cptVertical===4 || cptDiagonale===4 || cptHorizontal===4 || cptDiagonaleI===4){
-					newpartie.fin(true);
-				}
-				else if (cptVerticalIA===4 || cptDiagonaleIA===4 || cptHorizontalIA===4 || cptDiagonaleIIA===4){
-					newpartie.fin(false);
-				}
-			}
-
-			this.touradverse = function (nb, tour){
-				pr = new Pion(tour);
-				let coup = 0;
-				let choix = 0;
-				let joueur = 1;
-
-				let score = 0;
-				let grilletest = [la*lg];
-
-				/* Simulation de tous les cas possibles en ajoutant un jeton */
-				function simuler (coup, joueur){
-					/* Fonction à integrer pour un mode IA */
-				}
-
-				var evalIA =  function(grilletest){
-					/* Fonction à integrer pour un mode IA */
-				}
-
-				/* l'IA joue l'un des meilleur coup possibles */
-				var choixIA = function(joueur){
-					let resultat = [];
-					let temp = -10000;
-					let temp2 = 10000;
-					let cIA = 0;
-
-					let randmath = Math.random()*10;
-					for(let i=0;i<la;i++)
-					{
-						randmath = Math.random()*10;
-						resultat.push(simuler(i, joueur));
-					}
-
-					if(joueur==0){
-						resultat.forEach(function(e){if(temp<e[0]||(temp==e[0] && randmath>5.1)){temp=e[0];cIA=e[1]}});
-						//Pose pion
-						grille.splice(cIA,1,'X');
-						pr.ia(cIA);
-					}else if(joueur==1){
-						resultat.forEach(function(e){if(temp2>e[0]||(temp2==e[0] && randmath>5.1)){temp2=e[0];cIA=e[1]}});
-						//Pose pion
-						grille.splice(cIA,1,'O');
-						pr.mettre(cIA);
-					}
-
-					return cIA;
-				}
-
-				choix = choixIA(0);
-
-				//Fonction facultative d'annulation de coup
-				var annuleCoup = function(choix){
-					grille.splice(choix,1,choix);
-					var elementasup = document.getElementById('td'+choix);
-					elementasup.removeChild(elementasup.firstChild);
-				}
-
-			}
-
-			this.efface = function (){
-				//document.getElementById('grille').innerHTML= "";
-				grille = [];
-			}
-		};
-
-		var Pion = function (i){
-			let p = document.createElement('div');
-
-			this.mettre = function (pose){
-				document.getElementById('td'+pose).appendChild(p);
-				p.setAttribute('id','p'+i);
-				p.setAttribute('class','p'+Math.trunc(i/la));
-			};
-			this.ia = function (pose){
-				document.getElementById('td'+pose).appendChild(p);
-				p.setAttribute('id','ia'+i);
-				p.setAttribute('class','ia'+Math.trunc(i/la));
-			};
-		};
-
-		var Partie = function (gr){
-			let tour = 1;
-			gr.initialisation();
-
-			this.evt = function (){
-				for(let i=0;i<la;i++)
-					document.getElementsByClassName('td0')[i].addEventListener('click', function (){if(tour==0){gr.efface();}else{if(tour%2==0){gr.inserer(i, tour);}else{gr.tourjoueur2(i, tour);}gr.analyse(); tour++;}});
-			}
-
-			this.fin = function (victoire){
-				if (victoire)
-					alert('Game Over : J1 a gagner !');
-				else
-					alert('Game Over : J2 a gagner !');
-				tour = -1;
-			}
-		};
-
-		/* Initialisation */
-		gr = new Grille(lg,la);
-
-		newpartie = new Partie(gr);
-		newpartie.evt();
-
-	</script>
+        </div>
+    </main>
+    <footer class="footer text-center p-2" id="footer">
+		<hr class="my-4">
+		<i class="fas fa-copyright"></i> - Created by Jérémie Laisné. Thank you for visiting me! =)
+    </footer>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
-
 </html>
