@@ -456,7 +456,7 @@ var Piece = function(nb, grille)
             }
         }else if (nb == 66){
             xbis3=x3-1;ybis4=y4-2;xbis4=x4*1;
-            if (pos1[1]<=8 && pos2[1]<=8 && grille.getPiece(y3,xbis3,"up") && grille.getPiece(ybis4,xbis4,"up")){
+            if (pos1[1]>0 && pos2[1]>0 && pos1[1]<=8 && pos2[1]<=8 && grille.getPiece(y3,xbis3,"up") && grille.getPiece(ybis4,xbis4,"up")){
                 nb = 6;--pos4[0];
                 grille.move(y3, x3, pos3[0], --pos3[1], "up");
                 grille.move(y4, x4, --pos4[0], --pos4[1], "up");

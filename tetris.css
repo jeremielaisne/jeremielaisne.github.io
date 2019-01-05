@@ -20,12 +20,11 @@
 	}
 
 	#grille_tetris{
-		background-color: #FFF8DC;
 		background-image: url("assets/gameboy.png");
 		background-repeat: no-repeat;
 		background-position-x: center;
 		background-position-y: 3em;
-		background-size: 28em 28em;
+		background-size: 30em 28em;
 	}
 
 	#blk-score, #blk-lvl, #blk-lgn, #blk-score>.card-body, #blk-lvl>.card-body, #blk-lgn>.card-body{
@@ -34,16 +33,16 @@
 	}
 	
 	#img-tetris{
-		background-color: #000;
+		background-color: #111;
 		margin: 0 auto;
 		padding: 0;
-		width: 15em;
+		width: 12em;
 		margin-bottom: 5em;
 	}
 
 	#commandes{
 		text-align: center;
-		background-color: #121218;
+		background-color: #333;
 		padding: 0.4em;
 		border-radius: 5px;
 	}
@@ -74,12 +73,12 @@
 
   	.cell_tetris{
 		background-color: #000;
-		opacity: 0.1;
-		width: 1em;
-		height: 0.9em;
-		border: 2px solid #121218;
 		margin: 0;
 		padding: 0;
+		opacity: 0.05;
+		width: 1.2em;
+		height: 0.95em;
+		border: 2px solid #121218;
 	}
 
 	.cell_tetris_x, .cell_tetris_b,.cell_tetris_c, .cell_tetris_v, .cell_tetris_t, .cell_tetris_z, .cell_tetris_z, .cell_tetris_j{
