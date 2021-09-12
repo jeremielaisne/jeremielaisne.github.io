@@ -59,7 +59,7 @@ var Email = { send: function (a) { return new Promise(function (n, e) { a.nocach
                 submit_msg.classList.remove("d-none");
             }
 
-            if(nb < 3){
+            if(nb == 2){
                 alert("Vous venez de m'envoyer + de 2 messages successifs. Merci de ne pas spammer.");
             }
 
